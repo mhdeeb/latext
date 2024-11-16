@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage[svgnames,x11names,table]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[thicklines]{cancel}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=RoyalBlue4,
+    urlcolor=RoyalBlue4,
+}
+
+\title{{ '{' }}{{ assignment_title }}{{ '}' }}
+\author{Mohamed Hussien El-Deeb (201900052)}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\newcommand{\Lagr}{\mathcal{L}}
+
+\newpage
+
+{% for problem in problems %}
+\section{{ '{' }}{{ problem }}{{ '}' }}
+
+
+
+\newpage
+{% endfor %}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\nocite{{ '{' }}{{ bib_ref }}{{ '}' }}
+
+\end{document}

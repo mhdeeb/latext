@@ -1,0 +1,5 @@
+#!/bin/sh
+python main.py "$@"
+# SCRIPTDIR=$(dirname "$0")
+# cd "$SCRIPTDIR" || exit 1
+# PYTHONPATH="$PYTHONPATH:$SCRIPTDIR" python -u -m build.$1 "$@"
